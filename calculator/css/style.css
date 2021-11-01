@@ -1,0 +1,15 @@
+.container{
+    border: 2px solid black;
+    width: 20%;
+    background-color: steelblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.input-value:focus{
+    background-color:black;
+    color: white;
+}
+.input-value{
+    border-radius: 5px;
+    padding: 10px;
+}
