@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header started -->
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-4">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="col-4 text-center pt-3">
+                <h4>Online Admission Form<br>2021-22</h4>
+            </div>
+            <div class="col-4 ps-5 pt-3">
+                <p>Call Us : <a href="#">1800-120-5616</a><br>
+                Mail to : <a href="#">admission@jecrcu.edu.in</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- header ends -->
+
+    <div class="container-fluid text-white p-2 title">
+        Personal Details :-
+    </div>
+
+    <form action="#" onsubmit="return validation()" class="bg-light">
+    
+    <!-- personal details div started -->
+    <div class="container-fluid">
+        <div class="row">
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Application No.</label>
+                <input type="text" name="application" class="form-control" id="application" placeholder="Application No." autocomplete="off">
+                <span id="application_span" class="text-danger font-weight-bold"></span>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="">Contact Number</label>
+                <input type="text" name="contact" class="form-control" id="contact" placeholder="Enter Contact Number" autocomplete="off">
+                <span id="contact_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Aadhar Number</label>
+                <input type="text" name="aadhar" class="form-control" id="aadhar" placeholder="Enter Aadhar Number" autocomplete="off">
+                <span id="aadhar_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Category</label>
+                <select class="form-select" name="category" id="category" aria-label="Default select example">
+                    <option selected>Select Category</option>
+                    <option value="General">General</option>
+                    <option value="OBCc">OBC Creamy Layer</option>
+                    <option value="Obcnc">OBC Non-Creamy Layer (only for Rajasthan Domiclie)</option>
+                    <option value="sc">SC</option>
+                    <option value="st">ST</option>
+                </select>
+                <span id="category_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Student Name</label>
+                <input type="text" name="sname" class="form-control" id="sname" placeholder="Enter Full Name" autocomplete="off">
+                <span id="sname_span" class="text-danger font-weight-bold"></span>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="">Date of Birth</label>
+                <input type="date" name="date" class="form-control" id="date" autocomplete="off">
+                <span id="date_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Father's Name</label>
+                <input type="text" name="fathername" class="form-control" id="fathername" placeholder="Enter Father's Name" autocomplete="off">
+                <span id="fathername_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Religion</label>
+                <select class="form-select" name="religion" id="religion" aria-label="Default select example">
+                    <option selected>--Select--</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="muslim">Muslim</option>
+                    <option value="sikh">Sikh</option>
+                    <option value="christian">Christian</option>
+                    <option value="other">Other</option>
+                </select>
+                <span id="religion_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+
+        </div>
+
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" name="email" class="form-control" id="email" placeholder="Enter Email ID" autocomplete="off">
+                <span id="email_span" class="text-danger font-weight-bold"></span>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="">Gender</label><br>
+                <input class="form-check-input" type="radio" name="male" id="male">
+                <label class="form-check-label" for="">Male</label>
+                <input class="form-check-input" type="radio" name="female" id="female">
+                <label class="form-check-label" for="">female</label>
+                <input class="form-check-input" type="radio" name="other" id="other">
+                <label class="form-check-label" for="">Other</label>
+                <span id="gender_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="">Mother's Name</label>
+                <input type="text" name="mothername" class="form-control" id="mothername" placeholder="Enter Mother's Name" autocomplete="off">
+                <span id="mothername_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Nationality</label>
+                <input type="text" name="nationality" class="form-control" id="nationality" placeholder="Nationality" autocomplete="off">
+                <span id="nationality_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+        </div>
+        
+        </div>
+    </div>
+    <!-- personal details div ends -->
+
+    <br>
+
+
+    <div class="container-fluid text-white p-2 title">
+        Address Details :-
+    </div>
+
+    
+    <!-- Address details div started -->
+    <div class="container-fluid">
+        <div class="row">
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Address</label>
+                <input type="text" name="address" class="form-control" id="address" placeholder="Enter Address" autocomplete="off">
+                <span id="address_span" class="text-danger font-weight-bold"></span>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="">City</label>
+                <input type="text" name="city" class="form-control" id="city" placeholder="Enter City" autocomplete="off">
+                <span id="city_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+        </div>
+
+
+        <div class="col m-auto d-block">
+        
+            <div class="form-group">
+                <label for="">State</label>
+                <select class="form-select" name="state" id="state" aria-label="Default select example">
+                    <option selected>--Select--</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="punjab">Punjab</option>
+                </select>
+                <span id="state_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Pincode</label>
+                <input type="text" name="pincode" class="form-control" id="pincode" placeholder="Enter Pincode" autocomplete="off">
+                <span id="pincode_span" class="text-danger font-weight-bold"></span>
+            </div>
+
+           
+        </div>
+
+    </div>
+    </div>
+    <!-- Address details div ends -->
+
+    <br>
+
+    <div class="container-fluid text-white p-2 title">
+        Course Details :-
+    </div>
+
+        
+    <!-- Course details div started -->
+    <div class="container-fluid">
+        <div class="row">
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Discipline</label>
+                <select class="form-select" name="discipline" id="discipline" aria-label="Default select example">
+                    <option selected>--Select--</option>
+                    <option value="UG">UG</option>
+                    <option value="PG">PG</option>
+                </select>
+                <span id="discipline_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Programme</label>
+                <select class="form-select" name="programme" id="programme" aria-label="Default select example">
+                    <option selected>--Select--</option>
+                    <option value="it">IT & Computer Applications</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="science">Science</option>
+                    <option value="management">Management</option>
+                </select>                
+                <span id="programme_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Specialization</label>
+                <select class="form-select" name="specialization" id="specialization" aria-label="Default select example">
+                    <option selected>--Select--</option>
+                    <option value="bca">BCA</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="bsc">B.Sc</option>
+                    <option value="bechelorofcommerce">Bachelor of Commerce</option>
+                </select>                
+                <span id="specialization_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- Course details div ends -->
+
+    <br>
+
+    <div class="container-fluid text-white p-2 title">
+        Education Details :-
+    </div>
+
+  <!-- Education details div started -->
+    <div class="container-fluid">
+    <div class="row">
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">10<sup>th</sup></label>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Status</label>
+                <select class="form-select" name="status" id="status" aria-label="Default select example">
+                    <option selected>Passed</option>
+                </select>  
+                <span id="status_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Board</label>
+                <input type="text" name="board1" class="form-control" id="board1"  autocomplete="off">
+                <span id="board1_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Percentage</label>
+                <input type="text" name="percentage1" class="form-control" id="percentage1" autocomplete="off">
+                <span id="percentage1_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Year</label>
+                <input type="number" max="2021" value="2021" name="year" class="form-control" id="year" autocomplete="off">
+                <span id="year_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Subjects</label>
+                <input type="text" name="subjects1" value="All" class="form-control" id="subjects1" autocomplete="off">
+                <span id="subjects1_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">12<sup>th</sup></label>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Status</label>
+                <select class="form-select" name="status" id="status" aria-label="Default select example">
+                    <option selected>Passed</option>
+                </select>  
+                <span id="status_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Board</label>
+                <input type="text" name="board2" class="form-control" id="board2"  autocomplete="off">
+                <span id="board2_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Percentage</label>
+                <input type="text" name="percentage2" class="form-control" id="percentage2" autocomplete="off">
+                <span id="percentage2_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Year</label>
+                <input type="number" value="2021" name="year" class="form-control" id="year" autocomplete="off">
+                <span id="year_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Subjects</label>
+                <input type="text" name="subjects2" value="All" class="form-control" id="subjects2" autocomplete="off">
+                <span id="subjects2_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">UG</label>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Status</label>
+                <select class="form-select" name="status" id="status" aria-label="Default select example">
+                    <option selected>Passed</option>
+                </select>  
+                <span id="status_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Board</label>
+                <input type="text" name="board3" class="form-control" id="board3"  autocomplete="off">
+                <span id="board3_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Percentage</label>
+                <input type="text" name="percentage3" class="form-control" id="percentage3" autocomplete="off">
+                <span id="percentage3_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Year</label>
+                <input type="number" value="2021" name="year" class="form-control" id="year" autocomplete="off">
+                <span id="year_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+        <div class="col m-auto d-block">
+            <div class="form-group">
+                <label for="">Subjects</label>
+                <input type="text" name="subjects3" value="All" class="form-control" id="subjects3" autocomplete="off">
+                <span id="subjects3_span" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+     <br>
+
+    <!-- Education details div ends -->
+
+    <div class="container text-center mb-5">
+        <input type="submit" name="submit" value="Submit" class="btn fs-5 px-5">
+    </div>
+
+</form>
+
+<script>
+   
+    function validation(){
+
+        var application=document.getElementById('application').value;
+        var contact=document.getElementById('contact').value;
+        var aadhar=document.getElementById('aadhar').value;
+        var sname=document.getElementById('sname').value;
+        var fathername=document.getElementById('fathername').value;
+        var email=document.getElementById('email').value;
+        
+        var mothername=document.getElementById('mothername').value;
+        var nationality=document.getElementById('nationality').value;
+        var address=document.getElementById('address').value;
+        var city=document.getElementById('city').value;
+        var pincode=document.getElementById('pincode').value;
+
+        var board1=document.getElementById('board1').value;
+        var percentage1=document.getElementById('percentage1').value;
+        var subjects1=document.getElementById('subjects1').value;
+
+        var board2=document.getElementById('board2').value;
+        var percentage2=document.getElementById('percentage2').value;
+        var subjects2=document.getElementById('subjects2').value;
+
+        var board3=document.getElementById('board3').value;
+        var percentage3=document.getElementById('percentage3').value;
+        var subjects3=document.getElementById('subjects3').value;
+
+        var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+
+
+        if(application==""){
+            document.getElementById('application_span').innerHTML="** Please fill the application";
+            return false;
+        }
+        if(isNaN(application)){
+            document.getElementById("application_span").innerHTML = "** please enter only numbers";
+            return false;
+        }
+        if(contact==""){
+            document.getElementById('contact_span').innerHTML="** Please fill the contact";
+            return false;
+        }
+        if(isNaN(contact)){
+            document.getElementById("contact_span").innerHTML = "** please enter only digits";
+            return false;
+        }
+        if(contact.length!=10){
+            document.getElementById('contact_span').innerHTML="** Please enter only 10 digits";
+            return false;
+        }
+
+        if(aadhar==""){
+            document.getElementById('aadhar_span').innerHTML="** Please fill the aadhar number";
+            return false;
+        }
+        if(isNaN(aadhar)){
+            document.getElementById("aadhar_span").innerHTML = "** please enter only digits";
+            return false;
+        }
+        if(aadhar.length!=12){
+            document.getElementById('aadhar_span').innerHTML="** Please enter only 12 digits";
+            return false;
+        }
+        if(sname==""){
+            document.getElementById('sname_span').innerHTML="** Please fill the student name";
+            return false;
+        }
+        if(sname.length <= 2 || sname.length >= 40){
+            document.getElementById("sname_span").innerHTML ="** Name length must be between 2 to 40";
+            return false;
+        }
+        if(fathername==""){
+            document.getElementById('fathername_span').innerHTML="** Please fill the father name";
+            return false;
+        }
+        if(fathername.length <= 2 || fathername.length >= 40){
+            document.getElementById("fathername_span").innerHTML ="** Name length must be between 2 to 40";
+            return false;
+        }
+        if(email==""){
+            document.getElementById('email_span').innerHTML="** Please fill the email ID";
+            return false;
+        }
+        if(!reg.test(email)){
+            document.getElementById('email_span').innerHTML="** Please Enter valid email ID";
+            return false;
+        }
+
+        if(mothername==""){
+            document.getElementById('mothername_span').innerHTML="** Please fill the mother name";
+            return false;
+        }
+        if(mothername.length <= 2 || mothername.length >= 40){
+            document.getElementById("mothername_span").innerHTML ="** Name length must be between 2 to 40";
+            return false;
+        }
+
+        if(nationality==""){
+            document.getElementById('nationality_span').innerHTML="** Please fill the nationality";
+            return false;
+        }
+        if(address==""){
+            document.getElementById('address_span').innerHTML="** Please fill the address";
+            return false;
+        }
+        if(address.length <= 10 || mothername.length >= 200){
+            document.getElementById("address_span").innerHTML ="** Address length must be between 10 to 200";
+            return false;
+        }
+        if(city==""){
+            document.getElementById('city_span').innerHTML="** Please fill the city";
+            return false;
+        }
+        if(pincode==""){
+            document.getElementById('pincode_span').innerHTML="** Please fill pincode";
+            return false;
+        }
+        if(pincode.length!=6){
+            document.getElementById('pincode_span').innerHTML="** Please enter only 6 digits";
+            return false;
+        }
+        if(board1==""){
+            document.getElementById('board1_span').innerHTML="** Please fill 10<sup>th</sup> board";
+            return false;
+        }
+        if(percentage1==""){
+            document.getElementById('percentage1_span').innerHTML="** Please fill 10<sup>th</sup> percentage";
+            return false;
+        }
+        if(isNaN(percentage1)){
+            document.getElementById("percentage1_span").innerHTML = "** please enter only digits";
+            return false;
+        }
+        if(subjects1==""){
+            document.getElementById('subjects1_span').innerHTML="** Please fill 10<sup>th</sup> subjects";
+            return false;
+        }
+        if(board2==""){
+            document.getElementById('board2_span').innerHTML="** Please fill 12<sup>th</sup> board";
+            return false;
+        }
+        if(percentage2==""){
+            document.getElementById('percentage2_span').innerHTML="** Please fill 12<sup>th</sup> percentage";
+            return false;
+        }
+        if(isNaN(percentage2)){
+            document.getElementById("percentage2_span").innerHTML = "** please enter only digits";
+            return false;
+        }
+        if(subjects2==""){
+            document.getElementById('subjects2_span').innerHTML="** Please fill 12<sup>th</sup> subjects";
+            return false;
+        }
+        if(board3==""){
+            document.getElementById('board3_span').innerHTML="** Please fill UG board";
+            return false;
+        }
+        if(percentage3==""){
+            document.getElementById('percentage3_span').innerHTML="** Please fill UG percentage";
+            return false;
+        }
+        if(isNaN(percentage3)){
+            document.getElementById("percentage3_span").innerHTML = "** please enter only digits";
+            return false;
+        }
+        if(subjects3==""){
+            document.getElementById('subjects3_span').innerHTML="** Please fill UG subjects";
+            return false;
+        }
+        
+}
+</script>
+
+</body>
+</html>
